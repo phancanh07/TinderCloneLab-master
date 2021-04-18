@@ -1,0 +1,31 @@
+<h1 style=" text-align: center">CHOOSE FRIEND </h1>
+
+<section id="as_team">
+    <div class="container">
+        <div class="row">
+            {{#each users}}
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card al-team-box mt-3 mb-3">
+                        <div class="al-team-header">
+                            <img class="al-team-img" src="{{this.avatar}}"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <div>{{this.fullname}}</div>
+                            </h5>
+                            <h6 class="card-subtitle mb-3 text-muted font-weight-normal">{{this.andress}}</h6>
+                            <a href="delete/{{this._id}}" class="card-link"><i class="fa fa-facebook"></i></a>
+                            <a href="update={{this._id}}" class="card-link"><i class="fa fa-dribbble"></i></a>
+                            <a href="#" class="card-link"><i class="fa fa-youtube"></i></a>
+                            <a href="#" class="card-link"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="card-link"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+
+
+

@@ -1,0 +1,40 @@
+.al-team-box, .al-team-header {
+    overflow:hidden;
+    height:80%;
+}
+.al-team-box .al-team-img {
+    transition:all .4s;
+    width:100%;
+
+}
+.al-team-box:hover .al-team-img {
+    transform:rotate(10deg) scale(1.3);
+}
+.al-team-box .card-body {
+    padding-bottom: 15px;
+}
+.al-team-box .card-text {
+    color:#666;
+}
+.al-team-box .card-body .fa-facebook {
+    color: #3a589b;
+}
+.al-team-box .card-body .fa-twitter {
+    color: #76a9ea;
+}
+.al-team-box .card-body .fa-google-plus {
+    color: #f34431;
+}
+.al-team-box .card-body .fa-instagram {
+    color: #517fa6;
+}
+.al-team-box .card-body .fa-youtube {
+    color: #d22215;
+}
+.al-team-box .card-body .fa-dribbble {
+    color: #f1739f;
+}
+.al-team-box .card-body .fa:hover {
+    transform:scale(1.2);
+    transition:transform .1s;
+}
