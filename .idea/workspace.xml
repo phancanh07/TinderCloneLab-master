@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b46970c1-7cd3-467b-87ee-47e89ab9f147" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/untitled1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/layouts/js/jquery-1.11.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Sever Nodejs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Sever Nodejs.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/friend.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/friend.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/Highlight-Blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Highlight-Blue.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/update.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/update.handlebars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -39,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="H:/NodeAssigment/Sever Nodejs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -118,7 +125,9 @@
       <workItem from="1618596033926" duration="1505000" />
       <workItem from="1618647309113" duration="365000" />
       <workItem from="1618668204523" duration="15062000" />
-      <workItem from="1618725327533" duration="1930000" />
+      <workItem from="1618725327533" duration="2766000" />
+      <workItem from="1618762490373" duration="1612000" />
+      <workItem from="1618792169906" duration="5152000" />
     </task>
     <task id="LOCAL-00001" summary="da update phan package">
       <created>1617292735824</created>
@@ -141,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618727670245</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="da update  html">
+      <created>1618728145132</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618728145132</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +166,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="da update phan package" />
     <MESSAGE value="da update code highligt" />
-    <option name="LAST_COMMIT_MESSAGE" value="da update code highligt" />
+    <MESSAGE value="da update  html" />
+    <option name="LAST_COMMIT_MESSAGE" value="da update  html" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

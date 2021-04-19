@@ -81,8 +81,8 @@ app.get('/friend', upload, function (req, res) {
 });
 app.get('/search', upload, function (req, res) {
     var usefind = db.model('users', user);
-    var test=req.query.searchuser;
-    if (test.length > 0 ){
+    var test = req.query.searchuser;
+    if (test.length > 0) {
         usefind.find({fullname: req.query.searchuser}, (err, users) => {
             if (err) {
                 console.log('ERROL' + err.message);
@@ -91,13 +91,28 @@ app.get('/search', upload, function (req, res) {
                 res.render('friend', {users: users})
             }
         })
-    }
-    else {
+    } else {
         res.send(usefind);
     }
 
 });
 
+app.get("/login_user", function (req, res) {
+    var usefind = db.model('users', user);
+        usefind.findOne({email:req.query.emailss,fullname: req.query.passwordss}, (err, users) => {
+            if (err) {
+                console.log('ERROL' + err.message);
+            } else {
+               if (users!=undefined){
+                   console.log('fullnamess' + users);
+                   res.render('friend', {users: users})
+               }
+               else {
+                   res.send("deo")
+               }
+            }
+        })
+})
 
 app.get('/js', upload, function (req, res) {
     var usefind = db.model('users', user);
@@ -173,6 +188,22 @@ app.get('/update=:id', function (req, res) {
         }
     })
 })
+app.get('/test', upload, function (req, res) {
+    var usefind = db.model('users', user);
+    usefind.find({}, (err, users) => {
+        if (err) {
+            console.log('ERROL' + err.message);
+        } else {
+            users.forEach(function (item) {
+
+            });
+        }
+        res.render('test', {users: users})
+    })
+
+})
+
+
 app.post('/update=:id', upload, function (req, res) {
     var insert = db.model('user', user);
     insert.updateOne({_id: req.body.id}, {
@@ -182,7 +213,7 @@ app.post('/update=:id', upload, function (req, res) {
         andress: req.body.andress,
         city: req.body.city,
         street: req.body.street,
-        avatar: req.file.originalname
+        // avatar: req.file.originalname
     }, function (err, user) {
         if (err) {
             console.log("đã lỗi " + err.message);
