@@ -104,17 +104,16 @@ app.get("/login_user", function (req, res) {
                 console.log('ERROL' + err.message);
             } else {
                if (users!=undefined){
-                   console.log('fullnamess' + users);
-                   res.render('friend', {users: users})
+                   res.redirect('/friend');
                }
                else {
-                   res.send("deo")
+                   res.send("khong duoc roi")
                }
             }
         })
 })
 
-app.get('/js', upload, function (req, res) {
+app.get('/getUserList', upload, function (req, res) {
     var usefind = db.model('users', user);
     usefind.find({}, (err, users) => {
         if (err) {

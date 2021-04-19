@@ -18,5 +18,6 @@
     <orderEntry type="library" name="jquery.nicescroll" level="application" />
     <orderEntry type="library" name="Swiper" level="application" />
     <orderEntry type="library" name="twitter-bootstrap" level="application" />
+    <orderEntry type="library" name="@types/react-native" level="application" />
   </component>
 </module>
