@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var multer = require('multer');
 var doianh = '/data/uploads/';
+const axios = require('axios');
 var jsonParser = bodyParser.json()
 app.use(bodyParser.urlencoded({extended: true}))
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
@@ -120,10 +121,10 @@ app.get('/getUserList', upload, function (req, res) {
             console.log('LOG ERROR' + err.message);
         } else {
             users.forEach(function (item) {
-
             });
+            res.send(users);
         }
-        res.send(users);
+
     })
 });
 
@@ -132,6 +133,28 @@ app.get('/', function (req, res) {
     res.render('index', {layout: 'indexmain'});
 
 });
+
+axios.post('/insertUsers', upload, function (req, res) {
+    var insert = db.model('user', user);
+    insert({
+        fullname: String,
+        email: String,
+        phone: String,
+        andress: String,
+        city: String,
+        street: String,
+        avatar: String,
+    }).save(function (err) {
+        if (err) {
+            console.log('đã lỗi ' + err.message)
+            res.send('đã lỗi rồi bạn ơi ' + err.message)
+        } else {
+            res.render('addprofile');
+        }
+    });
+
+});
+
 
 app.post('/insertUser', upload, function (req, res) {
     var insert = db.model('user', user);
@@ -175,7 +198,6 @@ app.get('/delete/:id', function (req, res) {
             res.redirect('/friend')
         }
     })
-
 })
 app.get('/update=:id', function (req, res) {
     var insert = db.model('user', user);
