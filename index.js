@@ -154,6 +154,21 @@ axios.post('/insertUsers', upload, function (req, res) {
     });
 
 });
+axios.post('/userinsert', {
+    fullname: String,
+    email: String,
+    phone: String,
+    andress: String,
+    city: String,
+    street: String,
+    avatar: String,
+})
+    .then(function (response) {
+        console.log(response);
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
 
 
 app.post('/insertUser', upload, function (req, res) {
