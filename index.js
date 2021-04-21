@@ -45,9 +45,6 @@ var storage = multer.diskStorage({
 var upload = multer({
     dest: ('./public/data/uploads')
     , storage: storage,
-    limits: {
-        fileSize: 1 * 1024 * 1024, // gioi han file size <= 1MB
-    }
 }).single('avatarUser')
 app.engine('handlebars', expressHbs({
     layoutsDir: __dirname + '/views/layouts',
@@ -133,7 +130,28 @@ app.get('/', function (req, res) {
     res.render('index', {layout: 'indexmain'});
 
 });
-app.post('/insertUser', upload, function (req, res) {
+// app.post('/insertUser',upload, function (req, res) {
+//     var insert = db.model('user', user);
+//     insert({
+//         fullname: req.body.fullname,
+//         email: req.body.email,
+//         phone: req.body.phone,
+//         andress: req.body.andress,
+//         city: req.body.city,
+//         street: req.body.street,
+//         avatar: req.file.originalname,
+//     }).save(function (err) {
+//         if (err) {
+//             console.log('đã lỗi ' + err.message)
+//             res.send('đã lỗi rồi bạn ơi ' + err.message)
+//         } else {
+//             res.render('addprofile');
+//         }
+//     });
+//
+// });
+
+app.post('/insertUser',upload, function (req, res) {
     var insert = db.model('user', user);
     insert({
         fullname: req.body.fullname,
@@ -142,7 +160,6 @@ app.post('/insertUser', upload, function (req, res) {
         andress: req.body.andress,
         city: req.body.city,
         street: req.body.street,
-        avatar: req.file.originalname,
     }).save(function (err) {
         if (err) {
             console.log('đã lỗi ' + err.message)
