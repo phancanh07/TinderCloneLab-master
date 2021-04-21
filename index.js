@@ -133,44 +133,6 @@ app.get('/', function (req, res) {
     res.render('index', {layout: 'indexmain'});
 
 });
-
-axios.post('/insertUsers', upload, function (req, res) {
-    var insert = db.model('user', user);
-    insert({
-        fullname: String,
-        email: String,
-        phone: String,
-        andress: String,
-        city: String,
-        street: String,
-        avatar: String,
-    }).save(function (err) {
-        if (err) {
-            console.log('đã lỗi ' + err.message)
-            res.send('đã lỗi rồi bạn ơi ' + err.message)
-        } else {
-            res.render('addprofile');
-        }
-    });
-
-});
-axios.post('/userinsert', {
-    fullname: String,
-    email: String,
-    phone: String,
-    andress: String,
-    city: String,
-    street: String,
-    avatar: String,
-})
-    .then(function (response) {
-        console.log(response);
-    })
-    .catch(function (error) {
-        console.log(error);
-    });
-
-
 app.post('/insertUser', upload, function (req, res) {
     var insert = db.model('user', user);
     insert({
