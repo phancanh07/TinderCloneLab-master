@@ -130,27 +130,6 @@ app.get('/', function (req, res) {
     res.render('index', {layout: 'indexmain'});
 
 });
-// app.post('/insertUser',upload, function (req, res) {
-//     var insert = db.model('user', user);
-//     insert({
-//         fullname: req.body.fullname,
-//         email: req.body.email,
-//         phone: req.body.phone,
-//         andress: req.body.andress,
-//         city: req.body.city,
-//         street: req.body.street,
-//         avatar: req.file.originalname,
-//     }).save(function (err) {
-//         if (err) {
-//             console.log('đã lỗi ' + err.message)
-//             res.send('đã lỗi rồi bạn ơi ' + err.message)
-//         } else {
-//             res.render('addprofile');
-//         }
-//     });
-//
-// });
-
 app.post('/insertUser',upload, function (req, res) {
     var insert = db.model('user', user);
     insert({
@@ -160,6 +139,7 @@ app.post('/insertUser',upload, function (req, res) {
         andress: req.body.andress,
         city: req.body.city,
         street: req.body.street,
+        avatar: 'minhoo.png',
     }).save(function (err) {
         if (err) {
             console.log('đã lỗi ' + err.message)

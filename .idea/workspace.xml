@@ -129,7 +129,7 @@
       <workItem from="1618929620356" duration="2996000" />
       <workItem from="1618977580013" duration="610000" />
       <workItem from="1619015263067" duration="2060000" />
-      <workItem from="1619019871777" duration="2891000" />
+      <workItem from="1619019871777" duration="3569000" />
     </task>
     <task id="LOCAL-00001" summary="da update phan package">
       <created>1617292735824</created>
@@ -208,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619020634515</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="da update ngay 19/4/2021">
+      <created>1619022840910</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1619022840910</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
