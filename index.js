@@ -96,18 +96,17 @@ app.get('/search', upload, function (req, res) {
 
 app.get("/login_user", function (req, res) {
     var usefind = db.model('users', user);
-        usefind.findOne({email:req.query.emailss,fullname: req.query.passwordss}, (err, users) => {
-            if (err) {
-                console.log('ERROL' + err.message);
+    usefind.findOne({email: req.query.emailss, fullname: req.query.passwordss}, (err, users) => {
+        if (err) {
+            console.log('ERROL' + err.message);
+        } else {
+            if (users != undefined) {
+                res.redirect('/friend');
             } else {
-               if (users!=undefined){
-                   res.redirect('/friend');
-               }
-               else {
-                   res.send("khong duoc roi")
-               }
+                res.send("khong duoc roi")
             }
-        })
+        }
+    })
 })
 
 app.get('/getUserList', upload, function (req, res) {
@@ -129,7 +128,7 @@ app.get('/', function (req, res) {
     res.render('index', {layout: 'indexmain'});
 
 });
-app.post('/insertUser',upload, function (req, res) {
+app.post('/insertUser', upload, function (req, res) {
     var insert = db.model('user', user);
     insert({
         fullname: req.body.fullname,
