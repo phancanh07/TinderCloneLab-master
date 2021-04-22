@@ -39,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ReactTinder" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -132,7 +132,8 @@
       <workItem from="1619019871777" duration="4717000" />
       <workItem from="1619025153288" duration="333000" />
       <workItem from="1619051158585" duration="3656000" />
-      <workItem from="1619060268590" duration="6609000" />
+      <workItem from="1619060268590" duration="7162000" />
+      <workItem from="1619092119032" duration="646000" />
     </task>
     <task id="LOCAL-00001" summary="da update phan package">
       <created>1617292735824</created>
@@ -253,7 +254,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619068932534</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="da update ngay 19/4/2021">
+      <created>1619071585048</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1619071585048</updated>
+    </task>
+    <task id="LOCAL-00019" summary="da update ngay 19/4/2021">
+      <created>1619071616760</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1619071616760</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
