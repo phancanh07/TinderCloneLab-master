@@ -25,13 +25,7 @@ db.on('error', (e) => console.log(e));
 var imgs = ""
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        if (file.mimetype === 'image/jpeg' || file.mimetype === 'image/png') {
-            //cho phép tải  mỗi  anh png
-            cb(null, './public/data/uploads');
-        } else {
-            cb(new Error('đuôi'), null);
-            return
-        }
+        
     },
     filename: function (req, file, cb) {
         cb(null, file.originalname);
