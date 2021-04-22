@@ -96,13 +96,14 @@ app.get('/search', upload, function (req, res) {
 
 app.get("/login_user", function (req, res) {
     var usefind = db.model('users', user);
-    usefind.findOne({email: req.query.emailss, fullname: req.query.passwordss}, (err, users) => {
+    usefind.findOne({email:req.query.emailss,fullname: req.query.passwordss}, (err, users) => {
         if (err) {
             console.log('ERROL' + err.message);
         } else {
-            if (users != undefined) {
+            if (users!=undefined){
                 res.redirect('/friend');
-            } else {
+            }
+            else {
                 res.send("khong duoc roi")
             }
         }
@@ -128,7 +129,7 @@ app.get('/', function (req, res) {
     res.render('index', {layout: 'indexmain'});
 
 });
-app.post('/insertUser', upload, function (req, res) {
+app.post('/insertUser',upload, function (req, res) {
     var insert = db.model('user', user);
     insert({
         fullname: req.body.fullname,
@@ -137,7 +138,7 @@ app.post('/insertUser', upload, function (req, res) {
         andress: req.body.andress,
         city: req.body.city,
         street: req.body.street,
-        avatar: "Reus.png",
+        avatar: 'minhoo.png',
     }).save(function (err) {
         if (err) {
             console.log('đã lỗi ' + err.message)
@@ -188,6 +189,7 @@ app.get('/test', upload, function (req, res) {
             console.log('ERROL' + err.message);
         } else {
             users.forEach(function (item) {
+
             });
         }
         res.render('test', {users: users})
