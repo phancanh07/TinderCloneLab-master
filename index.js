@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var multer = require('multer');
 var doianh = '/data/uploads/';
-const axios = require('axios');
 var jsonParser = bodyParser.json()
 app.use(bodyParser.urlencoded({extended: true}))
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
@@ -21,16 +20,10 @@ const db = mongoose.connection;
 db.once('open', () => console.log('Successfully connected to MongoDB'));
 db.on('error', (e) => console.log(e));
 
-//tải ảnh
-var imgs = ""
 var storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-        
-    },
     filename: function (req, file, cb) {
         cb(null, file.originalname);
-        imgs = doianh.concat(file.originalname);
-        console.log(file);
+
     }
 })
 
@@ -131,7 +124,7 @@ app.post('/insertUser', upload, function (req, res) {
         andress: req.body.andress,
         city: req.body.city,
         street: req.body.street,
-        avatar: req.file.originalname,
+        avatar: "yong.png",
     }).save(function (err) {
         if (err) {
             console.log('đã lỗi ' + err.message)
