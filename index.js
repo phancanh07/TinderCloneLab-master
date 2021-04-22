@@ -138,7 +138,7 @@ app.post('/insertUser',upload, function (req, res) {
         andress: req.body.andress,
         city: req.body.city,
         street: req.body.street,
-        avatar: 'minhoo.png',
+        avatar: req.file.originalname,
     }).save(function (err) {
         if (err) {
             console.log('đã lỗi ' + err.message)

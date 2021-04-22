@@ -4,7 +4,6 @@
     <list default="true" id="b46970c1-7cd3-467b-87ee-47e89ab9f147" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/update.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/update.handlebars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +132,7 @@
       <workItem from="1619019871777" duration="4717000" />
       <workItem from="1619025153288" duration="333000" />
       <workItem from="1619051158585" duration="3656000" />
-      <workItem from="1619060268590" duration="1523000" />
+      <workItem from="1619060268590" duration="2251000" />
     </task>
     <task id="LOCAL-00001" summary="da update phan package">
       <created>1617292735824</created>
@@ -226,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619023522237</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="da update ngay 19/4/2021">
+      <created>1619062048710</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1619062048710</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
