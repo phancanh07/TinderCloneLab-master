@@ -11,7 +11,6 @@ var jsonParser = bodyParser.json()
 app.use(bodyParser.urlencoded({extended: true}))
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
 var urlencodedParser = bodyParser.urlencoded({extended: false})
-//ket noi mong go db
 
 mongoose.connect('mongodb://phancanh:canhphan1234@canhcluster-shard-00-00.nt3jr.mongodb.net:27017,canhcluster-shard-00-01.nt3jr.mongodb.net:27017,canhcluster-shard-00-02.nt3jr.mongodb.net:27017/TINDERASSIGMENT?ssl=true&replicaSet=atlas-13d0nc-shard-0&authSource=admin&retryWrites=true&w=majority', {
     useNewUrlParser: true,
@@ -190,7 +189,6 @@ app.get('/test', upload, function (req, res) {
             console.log('ERROL' + err.message);
         } else {
             users.forEach(function (item) {
-
             });
         }
         res.render('test', {users: users})
@@ -208,7 +206,7 @@ app.post('/update=:id', upload, function (req, res) {
         andress: req.body.andress,
         city: req.body.city,
         street: req.body.street,
-        // avatar: req.file.originalname
+        avatar: 'yong.png',
     }, function (err, user) {
         if (err) {
             console.log("đã lỗi " + err.message);
