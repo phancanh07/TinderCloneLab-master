@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b46970c1-7cd3-467b-87ee-47e89ab9f147" name="Default Changelist" comment="da update ngay 19/4/2021" />
+    <list default="true" id="b46970c1-7cd3-467b-87ee-47e89ab9f147" name="Default Changelist" comment="da update ngay 19/4/2021">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +18,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="thithu" />
   </component>
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
@@ -100,9 +106,9 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.appweb.html" />
+      <item itemvalue="JavaScript Debug.table.html" />
       <item itemvalue="JavaScript Debug.login.html" />
       <item itemvalue="JavaScript Debug.messenger.html" />
-      <item itemvalue="JavaScript Debug.table.html" />
       <item itemvalue="Node.js.index.js" />
     </list>
     <recent_temporary>
@@ -343,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620835763877</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="da update ngay 19/4/2021">
+      <created>1620836149650</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1620836149650</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,6 +372,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="da update phan package" />

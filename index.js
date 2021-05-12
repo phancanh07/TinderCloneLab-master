@@ -81,6 +81,16 @@ app.get('/danhsach', upload, function (req, res) {
         }
     })
 })
+app.get('/getlist', upload, function (req, res) {
+
+    insert.find({}, (err, users) => {
+        if (err) {
+            console.log('ERROL' + err.message);
+        } else {
+            res.send(users);
+        }
+    })
+})
 
 app.get('/delete/:id', upload, function (req, res) {
     var id = req.params.id
