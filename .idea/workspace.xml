@@ -17,6 +17,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -160,7 +166,7 @@
       <workItem from="1619654871042" duration="2298000" />
       <workItem from="1619657196228" duration="3972000" />
       <workItem from="1619661224893" duration="155000" />
-      <workItem from="1620831615047" duration="3420000" />
+      <workItem from="1620831615047" duration="3742000" />
     </task>
     <task id="LOCAL-00001" summary="da update phan package">
       <created>1617292735824</created>
@@ -323,7 +329,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620835240438</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="da update ngay 19/4/2021">
+      <created>1620835607818</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1620835607818</updated>
+    </task>
+    <task id="LOCAL-00025" summary="da update ngay 19/4/2021">
+      <created>1620835763877</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1620835763877</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
