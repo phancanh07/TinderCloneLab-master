@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{@types/bootstrap, @types/node, @types/react-native, Swiper, bootstrap, bootstrap.bundle, font-awesome, iconify, jquery-1.11.1, jquery.nicescroll, twitter-bootstrap}" />
+    <file url="PROJECT" libraries="{@popperjs/core, @types/bootstrap, @types/node, @types/react-native, Swiper, bootstrap, bootstrap.bundle, font-awesome, iconify, jquery-1.11.1, jquery-3.2.1.slim, jquery-3.3.1.slim, jquery-3.5.1.slim, jquery.nicescroll, popper.js, twitter-bootstrap}" />
     <includedPredefinedLibrary name="HTTP Response Handler" />
   </component>
 </project>
