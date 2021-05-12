@@ -1,0 +1,86 @@
+<div style="margin-top: 100px;text-align: center;margin: 10px">
+    <div class="input-group">
+        <form action="search" method="get" enctype="multipart/form-data">
+            <div class="form-outline">
+                <input type="text" name="form1" class="form-control"/>
+                <input type="text" name="form2" class="form-control"/>
+                <label class="form-label" for="form1">Search</label>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+
+    </div>
+
+    {{#each sanpham}}
+        {{#each this.avatar}}
+            <img src="{{this.filename}}">
+        {{/each}}
+        <div class="item">{{this.maxe}}</div>
+        <div class="item">{{this.tenxe}}</div>
+        <div class="item">{{this.loaixe}}</div>
+        <div class="item"><span class="dollars">{{this.sodan}}</span></div>
+        <div class="item">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Launch demo modal
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">DELELTE</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a href="delete/{{this._id}}">
+                                <button>delete</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="update={{this._id}}">
+            <button>update</button>
+            </a>
+        </div>
+        <hr>
+    {{/each}}
+</div>
+<style>
+
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .item {
+        color: #4dae3c;
+    }
+</style>
+<!--<style type="text/css">-->
+<!--    .dollars:after {-->
+<!--        content: 'VN';-->
+<!--    }-->
+
+<!--</style>-->
+<!--<script>-->
+<!--    let x = document.querySelectorAll(".dollars");-->
+<!--    for (let i = 0, len = x.length; i < len; i++) {-->
+<!--        let num = Number(x[i].innerHTML).toLocaleString('vi-VN');-->
+<!--        x[i].innerHTML = num;-->
+<!--        x[i].classList.add("dollars");-->
+<!--    }-->
+<!--</script>-->

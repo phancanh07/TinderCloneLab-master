@@ -1,0 +1,72 @@
+<div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+    <div class="wrapper wrapper--w680">
+        <div class="card card-4">
+            <div class="card-body">
+                <h2 class="title">Registration Form</h2>
+                <form method="post" enctype="multipart/form-data" action="update">
+                    <div class="row row-space">
+
+                        <div class="col-2">
+                            <div class="input-group">
+                                {{#each update.avatar}}
+                                    <img style="width: 30px;height: 30px" src="{{this.filename}}">
+                                {{/each}}
+
+                                <input class="input--style-4" type="hidden" name="avatars" value={{update.avatar}}
+                                       multiple>
+
+                                <label class="label">thêm ảnh</label>
+                                <input class="input--style-4" name="ids" value={{update._id}} type="hidden"
+                                >
+
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="input-group">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-space">
+                        <div class="col-2">
+                            <div class="input-group">
+                                <label class="label">mã xe</label>
+                                <input class="input--style-4" type="text" name="maxe" value={{update.maxe}}>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="input-group">
+                                <label class="label">tên xe</label>
+                                <input class="input--style-4" type="text" name="tenxe" value={{update.tenxe}}>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-space">
+                        <div class="col-2">
+                            <div class="input-group">
+                                <label class="label">so dan</label>
+                                <input class="input--style-4" type="number" name="sodan" value={{update.sodan}}>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="input-group">
+                                <label class="label">loaixe</label>
+                                <input class="input--style-4" type="text" name="loaixe" value={{update.loaixe}}>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-space">
+
+                    </div>
+
+                    <div class="p-t-15">
+                        <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
