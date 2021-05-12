@@ -100,9 +100,9 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.appweb.html" />
-      <item itemvalue="JavaScript Debug.table.html" />
       <item itemvalue="JavaScript Debug.login.html" />
       <item itemvalue="JavaScript Debug.messenger.html" />
+      <item itemvalue="JavaScript Debug.table.html" />
       <item itemvalue="Node.js.index.js" />
     </list>
     <recent_temporary>
