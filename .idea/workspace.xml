@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b46970c1-7cd3-467b-87ee-47e89ab9f147" name="Default Changelist" comment="da update ngay 19/4/2021">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/data/uploads/4928x3280-px-Cristiano-Ronaldo-1016678-wallhere.com (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/data/uploads/Bucky_TF&amp;TWS_ProfIle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/data/uploads/images1043382_22_7__Reus.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/data/uploads/jame.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/data/uploads/minhoo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/data/uploads/namjoon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/data/uploads/yong.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/0037.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/0038.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/0039.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/0040.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/0041.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/0042.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/0043.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/0044.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/0045.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/0046.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/0047.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/0048.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/0049.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/0050.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/0051.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/uploads/cover.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +188,7 @@
       <workItem from="1619661224893" duration="155000" />
       <workItem from="1620831615047" duration="3742000" />
       <workItem from="1620842452609" duration="309000" />
-      <workItem from="1620880977734" duration="501000" />
+      <workItem from="1620880977734" duration="886000" />
     </task>
     <task id="LOCAL-00001" summary="da update phan package">
       <created>1617292735824</created>
@@ -371,7 +379,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620836895180</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="da update ngay 19/4/2021">
+      <created>1620881644518</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1620881644518</updated>
+    </task>
+    <task id="LOCAL-00029" summary="da update ngay 19/4/2021">
+      <created>1620881773542</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1620881773542</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
